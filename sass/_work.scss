@@ -1,0 +1,41 @@
+.work {
+  padding-top: 0;
+  &__title {
+    margin-bottom: 50px;
+    @include font(null, 36px, 1.17, null);
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    margin-right: 30px;
+    width: 370px;
+  }
+  &__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &__list img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__text {
+    position: absolute;
+    display: inline-flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    @include font(700, null, 1.14, 0.03em);
+    text-transform: uppercase;
+  
+    color: var(--third-text-color);
+    background-color: var(--work-text-bg-color);
+  }
+}

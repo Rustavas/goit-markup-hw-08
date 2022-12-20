@@ -1,0 +1,121 @@
+.portfolio {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 370px;
+  }
+  &__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    box-shadow: 0;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__photo {
+    display: block;
+  }
+  &__data {
+    padding: 20px 24px;
+  
+    border: 1px solid var(--portfolio-border-color);
+    border-top: transparent;
+  }
+  &__title {
+    margin-bottom: 4px;
+    @include font(null, 18px, 2, 0.06em);
+    color: var(--fourth-text-color);
+  }
+  &__work {
+    @include font(null, 16px, 1.88, 0.03em);
+    color: var(--primery-text-color);
+  }
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--portfolio-text-bg-color);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover &__overlay {
+    transform: translateY(0);
+  }
+  &__text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    padding: 63px 24px;
+    @include font(null, 18px, 1.56, 0.03em);
+    overflow: auto;
+    color: var(--third-text-color);
+  }
+  &__text::-webkit-scrollbar {
+    width: 2px;
+  }
+  &__text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &__text::-webkit-scrollbar-thumb {
+    background-color: var(--portfolio-text-scrollbar-bg-color);
+    /* outline: 1px solid slategrey; */
+  }
+}
+.portfolio-btn {
+  &__list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    list-style: none;
+  }
+  &__item:not(:first-child) {
+    margin-left: 8px;
+  }
+  &__work {
+    border: none;
+    padding: 6px 25px;
+    font-family: inherit;
+    @include font(500, 16px, 1.63, 0.03em);
+    color: var(--fourth-text-color);
+    background-color: var(--portfolio-btn-bg-color);
+    box-shadow: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  &__work:hover,
+  &__work:focus {
+    color: var(--second-accent-color);
+    background-color: var(--accent-color);
+  }
+  
+  &__work:hover,
+  &__work:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}

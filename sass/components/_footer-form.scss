@@ -1,0 +1,45 @@
+.footer-form {
+  &__field {
+    display: flex;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    @include font(null, 16px, 1.25, 0.03em);
+
+    color: var(--footer-form-input-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  &__input:focus,
+  &__input:hover {
+    outline: transparent;
+  }
+  &__icon {
+    position: relative;
+  }
+  &__btn-icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--footer-btn-icon-color);
+  }
+  &__button {
+    padding-right: 62px;
+    padding-left: 28px;
+    align-items: center;
+  }
+  &__button:focus,
+  &__button:hover {
+    background-color: var(--primary-btn-hover-bg-color);
+  }
+  &__icon:focus &__btn-icon,
+  &__icon:hover &__btn-icon {
+    cursor: pointer;
+  }
+}

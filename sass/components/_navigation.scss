@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  &__list {
+    display: flex;
+    margin-left: 93px;
+    list-style: none;
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+  &__link {
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font(null, null, null, 0.02em);
+    color: var(--fourth-text-color);
+  }
+}

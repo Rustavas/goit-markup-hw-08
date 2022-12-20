@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  @include font(700, 26px, 1.19, 0.03em);
+  color: var(--accent-color);
+  text-decoration: none;
+  cursor: pointer;
+  &__studio {
+    color: var(--logo-studio-color);
+  }
+  &__footer {
+    color: var(--logo-footer-color);
+  }
+}

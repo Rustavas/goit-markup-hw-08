@@ -1,0 +1,29 @@
+.differences {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__picture {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--third-bg-color);
+  }
+  &__title {
+    margin-bottom: 10px;
+    @include font(null, 14px, 1.14, null);
+    text-transform: uppercase;
+    color: var(--fourth-text-color);
+  }
+  &__text {
+    @include font(null, null, 1.71, 0.03em);
+    color: var(--primery-text-color);
+  }
+}

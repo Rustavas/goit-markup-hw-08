@@ -1,0 +1,8 @@
+.page__header {
+  border-bottom: 1px solid var(--head-bb-color);
+}
+.main-nav {
+  @extend %flex-align;
+}
+
+/* Authorization */
