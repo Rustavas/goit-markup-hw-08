@@ -1,10 +1,10 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
+  
   text-align: center;
 
-  max-width: 1600px;
-  height: 600px;
+  width: auto;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 
@@ -18,6 +18,12 @@
   background-size: cover;
   background-position: center;
   background-color: var(--hero-bg-color);
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
   &__title {
     margin-left: auto;
     margin-right: auto;

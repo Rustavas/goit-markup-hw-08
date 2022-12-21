@@ -1,9 +1,44 @@
 .differences {
   &__list {
     list-style: none;
-
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   &__item {
     width: 100%;
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+      margin-bottom: 30;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 120px) / 4);
+    }
+  }
+  &__picture {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120px;
+    background-color: var(--third-bg-color);
+  }
+  &__title {
+    margin-bottom: 10px;
+    @include font(null, 14px, 1.14, null);
+    text-transform: uppercase;
+    color: var(--fourth-text-color);
+  }
+  &__text {
+    @include font(null, null, 1.71, 0.03em);
+    color: var(--primery-text-color);
   }
 }
