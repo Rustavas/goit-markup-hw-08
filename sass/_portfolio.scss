@@ -104,48 +104,48 @@
     /* outline: 1px solid slategrey; */
   }
 }
-// .portfolio-btn {
-//   &__list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-bottom: 40px;
-//     list-style: none;
-//     @media screen and (min-width: 480px) {
-//       max-width: 326px;
-//     }
-//   }
-//   &__item:not(:first-child) {
-//     margin-left: 8px;
-//   }
-//   &__work {
-//     border: none;
-//     padding: 6px 25px;
-//     font-family: inherit;
-//     @include font(500, 16px, 1.63, 0.03em);
-//     color: var(--fourth-text-color);
-//     background-color: var(--portfolio-btn-bg-color);
-//     box-shadow: 0;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     border-radius: 4px;
-//     cursor: pointer;
-//     text-align: center;
+.portfolio-btn {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    list-style: none;
+    @media screen and (min-width: 480px) {
+      max-width: 326px;
+    }
+  }
+  &__item:not(:first-child) {
+    margin-left: 8px;
+  }
+  &__work {
+    border: none;
+    padding: 6px 25px;
+    font-family: inherit;
+    @include font(500, 16px, 1.63, 0.03em);
+    color: var(--fourth-text-color);
+    background-color: var(--portfolio-btn-bg-color);
+    box-shadow: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
 
-//   }
+  }
   
-//   &__work:hover,
-//   &__work:focus {
-//     color: var(--second-accent-color);
-//     background-color: var(--accent-color);
-//   }
+  &__work:hover,
+  &__work:focus {
+    color: var(--second-accent-color);
+    background-color: var(--accent-color);
+  }
   
-//   &__work:hover,
-//   &__work:focus {
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   }
-// }
-// .portfolio-btn__item:not(:first-child),
-// .portfolio-btn__item:not:nth-child(4) {
-//   margin-left: 8px;
-// }
+  &__work:hover,
+  &__work:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.portfolio-btn__item:not(:first-child),
+.portfolio-btn__item:not:nth-child(4) {
+  margin-left: 8px;
+}

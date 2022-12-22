@@ -6,7 +6,6 @@
     padding-top: 94px;
     padding-bottom: 94px;
   } 
-
   &__title {
     margin-bottom: 30px;
     @include font(700, 28px, 1.17, 0.03em);
@@ -14,11 +13,10 @@
   }
   &__list {
     list-style: none;
-    margin: -15px;
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    
+    margin: -15px;   
     }
   }
   &__item {  
@@ -42,7 +40,6 @@
       width: calc((100% - 120px) / 4);
     } 
   }
-
   &__photo {
     width: 100%;
     height: auto;
