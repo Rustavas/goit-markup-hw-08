@@ -132,6 +132,49 @@ body {
   border-bottom: 1px solid var(--head-bb-color);
 }
 
+.navigation {
+  position: relative;
+  width: 100%;
+}
+
+.navigation__btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.navigation__btn .navigation__icons-cross {
+  display: none;
+}
+
+.navigation__btn.is-open .navigation__icons-cross {
+  display: block;
+}
+
+.navigation__btn.is-open .navigation__icons-menu {
+  display: none;
+}
+
+.navigation__icons {
+  fill: black;
+}
+
 /* Authorization */
 .navigation {
   display: -webkit-box;

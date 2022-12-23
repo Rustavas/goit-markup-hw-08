@@ -23,12 +23,19 @@
 </head>
 
 <body>
-   <!-- <header class="page__header">
+    <header class="page__header">
       <div class="container main-nav ">
          <nav class="navigation">
             <a href="index.html" class="logo">Web<span
                   class="logo__studio">Studio</span></a>
-            <ul class="navigation__list">
+            <button type="button" class="navigation__btn" is-open>
+               <svg width="19" height="19" class="navigation__icons"
+               aria-lable="Перемикач мобільного меню">
+                  <use class="navigation__icons-cross" href="./images/icons.svg#cross"></use>
+                  <use class="navigation__icons-menu" href="./images/icons.svg#menu"></use>
+               </svg>
+            </button>
+            <!-- <ul class="navigation__list">
                <li class="navigation__item"><a href="index.html"
                      class="navigation__link link current">Студія</a></li>
                <li class="navigation__item"><a href="portfolio.html"
@@ -36,9 +43,9 @@
                <li class="navigation__item"><a href="#"
                      class="navigation__link link">Контакти</a>
                </li>
-            </ul>
+            </ul> -->
          </nav>
-         <div class="auth">
+         <!-- <div class="auth">
             <ul class="auth__list">
                <li class="auth__item">
                   <a href="mailto:info@devstudio.com" class="auth__link link">
@@ -55,9 +62,9 @@
                   </a>
                </li>
             </ul>
-         </div>
+         </div> -->
       </div>
-   </header> -->
+   </header>
    <main>
 
       <!-- <section class="hero">
@@ -422,7 +429,7 @@
       <div class="modal">
          <button type="button" class="modal__close" data-modal-close>
             <svg width="11" height="11" class="modal__icons">
-               <use href="./images/icons.svg#vector"></use>
+               <use href="./images/icons.svg#cross"></use>
             </svg>
          </button>
          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
