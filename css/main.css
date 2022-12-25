@@ -285,12 +285,19 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tel.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: var(--hero-bg-color);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tel2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tel2x.jpg");
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -302,6 +309,15 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tab.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tab2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab2x.jpg");
   }
 }
 
@@ -312,6 +328,15 @@ body {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desk.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desk.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desk2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desk2x.jpg");
   }
 }
 
@@ -948,9 +973,15 @@ body {
   border-top: transparent;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio__data--hight {
-    height: 147px;
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__data--hight {
+    padding-bottom: 20px;
   }
 }
 
@@ -1028,23 +1059,35 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: -15px -8px;
+  margin-left: -8;
   margin-bottom: 40px;
   list-style: none;
+  max-width: 359px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-btn__list {
-    max-width: 326px;
+    max-width: 624px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
   }
 }
 
-.portfolio-btn__item:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 1200px) {
+  .portfolio-btn__list {
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio-btn__item {
+  margin: 15px 8px;
 }
 
 .portfolio-btn__work {
   border: none;
-  padding: 6px 25px;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -1061,6 +1104,10 @@ body {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
+}
+
+.portfolio-btn__work-padding {
+  padding: 6px 25px;
 }
 
 .portfolio-btn__work:hover, .portfolio-btn__work:focus {
