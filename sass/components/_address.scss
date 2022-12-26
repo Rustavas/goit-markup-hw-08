@@ -1,10 +1,20 @@
 .address {
   &__list {
+    margin-bottom: 60px;
     list-style: none;
     @include font(null, null, null, 0.03em);
+    @include desktop {
+      margin-right: 70px;
+    }
+  }
+  &__item {
+    text-align: center;
+    @include desktop {
+      text-align: left;
+    }
   }
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &__text {
     font-style: normal;

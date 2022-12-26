@@ -1,22 +1,54 @@
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
-  &-main {
-    display: flex;
-    align-items: baseline;
+  &__main {   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include tel {
+      width: 480px;
+    }
+    @include tablet {
+      width: 768px;
+      padding-left: 82px;
+      padding-right: 82px;
+    }
+    @include desktop {
+      width: 1200px;
+      display: flex;
+      padding-left: 15px;
+      padding-right: 15px;
+      align-items: baseline;
+    }
+  }
+  &__box {
+    @include tablet {
+      display: flex;
+    }
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+
+    }
   }
   &__logo-main {
+    max-width: 154px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     padding: 0;
+    @include desktop {
+      margin-left: 0;   
+    }
   }
   &__social {
-    margin-left: 70px;
-  }
-  &__social-list {
-    margin-left: 0px;
-    justify-content: left;
+    margin-bottom: 60px;
+    @include tablet {
+      margin-left: auto;
+    }
   }
   &__social-link {
     background-color: var(--second-social-bg-link-color);
@@ -29,11 +61,23 @@
   }
   &__subscribe {
     margin-left: auto;
+    margin-right: auto;
+    @include desktop {
+      max-width: 570px;
+      margin-right: 0;
+    }
   }
 }
 .join {
+  text-align: center;
   margin-bottom: 20px;
   color: var(--third-text-color);
   @include font(700, null, 1.14, 0.03em);
   text-transform: uppercase;
+  @include tablet-max {
+    
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
