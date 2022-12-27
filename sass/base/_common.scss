@@ -5,10 +5,7 @@ body {
   background-color: var(--primery-bg-color);
 }
 
-// .section {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
+
 .link {
   @include font(500, null, 1.14, null);
   // color: var(--fourth-text-color);
