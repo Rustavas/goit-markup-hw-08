@@ -1,28 +1,43 @@
 .auth {
   margin-left: auto;
-  &__list {
-    display: flex;
-    list-style: none;
+  @include tel-max {
+    display: none;
   }
-  &__item:not(:first-child) {
-    margin-left: 50px;
+
+  &__list {
+    list-style: none;
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__item {
+    // @extend %flex-align;
+    color: var(--primery-text-color);
+  }
+  &__item:first-child {
+    @include tablet {
+      
+    }
+    @include desktop {
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
   }
   &__link {
-    @extend %flex-align;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--primery-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include desktop {
+      @extend %flex-align;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   &__link:hover {
     color: var(--accent-color);
   }
-  &__item {
-    @extend %flex-align;
-    color: var(--primery-text-color);
-  }
+
   &__icons {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
   }
 }

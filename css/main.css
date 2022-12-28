@@ -50,7 +50,7 @@ ol {
   padding-left: 0px;
 }
 
-.main-nav, .auth__link, .auth__item, .form__policy-label {
+.main-nav, .auth__item, .form__policy-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,50 +132,16 @@ body {
   border-bottom: 1px solid var(--head-bb-color);
 }
 
-.navigation {
+@media screen and (min-width: 768px) {
+  .page__header {
+    height: 80px;
+  }
+}
+
+.main-nav {
   position: relative;
-  width: 100%;
 }
 
-.navigation__btn {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-left: auto;
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  border: none;
-}
-
-.navigation__btn .navigation__icons-cross {
-  display: none;
-}
-
-.navigation__btn.is-open .navigation__icons-cross {
-  display: block;
-}
-
-.navigation__btn.is-open .navigation__icons-menu {
-  display: none;
-}
-
-.navigation__icons {
-  fill: black;
-}
-
-/* Authorization */
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,8 +152,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
+  margin-left: 87px;
   list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .navigation__item:not(:first-child) {
@@ -254,20 +226,31 @@ body {
   margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .auth {
+    display: none;
+  }
+}
+
 .auth__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
 }
 
-.auth__item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .auth__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .auth__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primery-text-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -282,7 +265,7 @@ body {
 }
 
 .auth__icons {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 

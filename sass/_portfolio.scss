@@ -16,7 +16,7 @@
   &__item {
     width: 100%;
     height: auto;
-    @include tablet-max {
+    @include tel-max {
       &:not(:last-child) {
         margin-bottom: 30px;
         }

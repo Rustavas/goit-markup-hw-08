@@ -1,9 +1,16 @@
 .navigation {
+  
   display: flex;
   &__list {
     display: flex;
-    margin-left: 93px;
+    margin-left: 87px;
     list-style: none;
+    @include tel-max {
+      display: none;
+    }
+    @include desktop {
+      margin-left: 93px;
+    }
   }
   &__item:not(:first-child) {
     margin-left: 50px;

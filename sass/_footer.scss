@@ -41,7 +41,7 @@
     margin-bottom: 20px;
     padding: 0;
     @include desktop {
-      margin-left: 0;   
+    margin-left: 0;   
     }
   }
   &__social {
@@ -74,9 +74,7 @@
   color: var(--third-text-color);
   @include font(700, null, 1.14, 0.03em);
   text-transform: uppercase;
-  @include tablet-max {
-    
-  }
+
   @include desktop {
     text-align: left;
   }
