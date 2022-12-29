@@ -1,9 +1,10 @@
 .hero {
+  border: solid 2px tomato;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
 
-  width: 100%;
+  // width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -26,11 +27,9 @@
   background-size: cover;
   background-position: center;
   background-color: var(--hero-bg-color);
-  @include tel {
-    width: 480px;
-  }
+  
   @include tablet {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -48,7 +47,6 @@
       
   }
   @include desktop {
-    width: 100%;
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
@@ -77,9 +75,8 @@
     @include font(900, 26px, 1.62, 0.06em);
     color: var(--third-text-color);
     text-transform: uppercase;
-    @media screen and (min-width: 1200px) {
-      max-width: 696px;
-      @include font(null, 44px, 1.36, null);
+    @include desktop {
+      @include font(900, 44px, 1.36, 0.06em);
     }
   }
   &__button {

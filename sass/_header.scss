@@ -1,6 +1,6 @@
 .page__header {
-  
-  // height: 60px;
+  // border: solid 2px tomato;
+  height: 60px;
   border-bottom: 1px solid var(--head-bb-color);
   @include tablet {
     height: 80px;
@@ -8,11 +8,17 @@
 }
 .main-nav {
   position: relative;
-  // @extend %flex-align;
-  display: flex;
-  align-items: center;
-
+  @extend %flex-align;
+  // @include tel {
+  //   max-width: 480px;
+  // }
 }
+// @include tablet {
+//   max-width: 768px;
+// }
+// @include desktop {
+//   max-width: 1200px;
+// }
 
 
 // .navigation {
