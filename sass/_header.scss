@@ -8,7 +8,9 @@
 }
 .main-nav {
   position: relative;
-  @extend %flex-align;
+  // @extend %flex-align;
+  display: flex;
+  align-items: center;
 
 }
 
