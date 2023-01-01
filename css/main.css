@@ -848,17 +848,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
 .footer__logo-main {
   max-width: 154px;
   margin-left: auto;
