@@ -29,11 +29,6 @@
       display: flex;
       align-items: baseline;
     }
-    @include desktop {
-      // display: flex;
-      // align-items: baseline;
-
-    }
   }
   &__logo-main {
     max-width: 154px;
