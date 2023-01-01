@@ -27,6 +27,7 @@
   &__box {
     @include tablet {
       display: flex;
+      align-items: baseline;
     }
     @include desktop {
       display: flex;
