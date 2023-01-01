@@ -1,5 +1,4 @@
 .hero {
-  border: solid 2px tomato;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
@@ -76,6 +75,7 @@
     color: var(--third-text-color);
     text-transform: uppercase;
     @include desktop {
+      max-width: 696px;
       @include font(900, 44px, 1.36, 0.06em);
     }
   }
