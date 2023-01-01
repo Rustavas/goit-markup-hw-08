@@ -144,7 +144,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .page__header {
-    max-width: 1600px;
+    max-width: 1200px;
   }
 }
 
