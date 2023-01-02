@@ -56,67 +56,65 @@
                </li>
             </ul>
          </div>
-         <!-- <button type="button" class="navigation__btn js-open-menu" is-open>
-            <svg width="19" height="19" class="navigation__icons">
+         <button type="button" class="navigation__btn menu-toggle js-open-menu"
+            aria-expanded="false" aria-controls="mobile-menu" is-open>
+            <svg width="19" height="19" class="navigation__icons"
+               aria-lable="Перемикач мобільного меню">
                <use class="navigation__icons-menu"
                   href="./images/icons.svg#menu"></use>
             </svg>
-         </button> -->
+         </button>
       </div>
-      <!-- <div class="mob-menu js-menu-container">
-         <div class="container">
-            <button type="button" class="mob-navigation__btn js-close-menu"
-               aria-expanded="false" aria-controls="mobile-menu">
-               <svg width="19" height="19" class="mob-navigation__icons"
-                  aria-lable="Перемикач мобільного меню">
-                  <use class="mob-navigation__icons-cross"
-                     href="./images/icons.svg#cross"></use>
-               </svg>
-            </button>
-            <ul class="mob-navigation__list">
-               <li class="mob-navigation__item"><a href="index.html"
-                     class="mob-navigation__link link current">Студія</a></li>
-               <li class="mob-navigation__item"><a href="portfolio.html"
-                     class="mob-navigation__link link">Портфоліо</a></li>
-               <li class="mob-navigation__item"><a href="#"
-                     class="mob-navigation__link link">Контакти</a>
+      <div class="mob-menu menu-container js-menu-container" id="mobile-menu">
+         <button type="button" class="mob-menu__btn menu-toggle js-close-menu">
+            <svg width="19" height="19" aria-lable="Перемикач мобільного меню">
+               <use class="mob-navigation__icons-cross"
+                  href="./images/icons.svg#cross"></use>
+            </svg>
+         </button>
+         <ul class="mob-menu__navigation-list">
+            <li class="mob-menu__navigation-item"><a href="index.html"
+                  class="mob-menu__navigation-link link">Студія</a>
+            </li>
+            <li class="mob-menu__navigation-item"><a href="portfolio.html"
+                  class="mob-menu__navigation-link link">Портфоліо</a></li>
+            <li class="mob-menu__navigation-item"><a href="#"
+                  class="mob-menu__navigation-link link">Контакти</a>
+            </li>
+         </ul>
+         <div class="mob__box">
+            <ul class="mob-menu__auth-list">
+               <li class="mob-menu__auth-item">
+                  <a href="tel:+380961111111"
+                     class="mob-menu__auth-link-tel">+38 096 111 11 11
+                  </a>
+               </li>
+               <li class="mob-menu__auth-item">
+                  <a href="mailto:info@devstudio.com"
+                     class="mob-menu__auth-link-mail">info@devstudio.com
+                  </a>
                </li>
             </ul>
-            <div class="mob__box">
-               <ul class="mob-auth__list">
-                  <li class="mob-auth__item">
-                     <a href="mailto:info@devstudio.com"
-                        class="mob-auth__link-tel">+38 096 111 11 11
-                     </a>
-                  </li>
-                  <li class="mob-auth__item">
-                     <a href="tel:+380961111111"
-                        class="mob-auth__link-mail">info@devstudio.com
-                     </a>
-                  </li>
-               </ul>
-               <ul class="mob-social__list">
-                  <li class="mob-social__item">
-                     <a href="#" class="mob-social__link">Instagram
-                     </a>
-                  </li>
-                  <li class="mob-social__item"><a href="#"
-                        class="mob-social__link">Twitter
-                     </a>
-                  </li>
-                  <li class="mob-social__item"><a href="#"
-                        class="mob-social__link">Facebook
-                     </a>
-                  </li>
-                  <li class="mob-social__item">
-                     <a href="#" class="mob-social__link">Linkedin
-                     </a>
-                  </li>
-               </ul>
-
-            </div>
+            <ul class="mob-menu__social-list">
+               <li class="mob-menu__social-item">
+                  <a href="#" class="mob-menu__social-link">Instagram
+                  </a>
+               </li>
+               <li class="mob-menu__social-item"><a href="#"
+                     class="mob-menu__social-link">Twitter
+                  </a>
+               </li>
+               <li class="mob-menu__social-item"><a href="#"
+                     class="mob-menu__social-link">Facebook
+                  </a>
+               </li>
+               <li class="mob-menu__social-item">
+                  <a href="#" class="mob-menu__social-link">Linkedin
+                  </a>
+               </li>
+            </ul>
          </div>
-      </div> -->
+      </div>
    </header>
    <main>
 
@@ -609,7 +607,11 @@
          </form>
       </div>
    </div>
-   <script src="./js/menu.js"></script>
+   <script defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+   <script defer src="js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 

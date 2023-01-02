@@ -15,127 +15,100 @@
 .main-nav {
   position: relative;
   @extend %flex-align;
-  // @include tel {
-  //   max-width: 480px;
-  // }
 }
-// @include tablet {
-//   max-width: 768px;
-// }
-// @include desktop {
-//   max-width: 1200px;
-// }
+.navigation__btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  overflow: scroll;
+  z-index: 999;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  &__navigation-list {
+    list-style: none;
+    @include font(500, 40px, 1.18, 0.02em); 
+  }
+  &__navigation-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__navigation-link {
+    color: #212121;
+  }
+  &__auth-list {
+    margin-bottom: 64px;
+    list-style: none;
+  }
+  &__auth-item:first-child {
+    margin-bottom: 32px;
+  }
+  &__auth-link-tel {
+    @include font(500, 34px, 1.18, 0.02em);
+    color: #2196F3;
+    text-decoration: none;
+  }
+  &__auth-link-mail {
+    @include font(500, 24px, 1.17, 0.02em);
+    color: #2196F3;
+    text-decoration: none;
+    color: #757575;
+  }
+  &__social-list {
+    display: flex;
+    list-style: none;
+  }
+  &__social-item:not(:last-child)::after {
+    content:'';
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+  &__social-link {
+    color: #2196F3;
+    text-decoration: none;
+  }
+}
 
 
-// .navigation {
-//   width: 100%;
-// }
-// .navigation__btn {
-//   position: absolute;
-//   right: 0;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   margin-left: auto;
-//   width: 40px;
-//   height: 40px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: transparent;
-//   border: none;
-//   @include tablet {
-//     display: none;
-//   }
-// }
 
 
-// .mob-menu {
-//   display: none;
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   min-height: 480px;
-//   background-color: #fff;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   overflow: scroll;
-//   z-index: 999;
-//   @include tablet  {
-//     display: none;
-//   }
-//   & .container {
-//     display: block;
-//     position: relative;
-//     height: 100%;
-//     padding: 48px 40px;
-  
-//   }
-// }
-// .mob-navigation__btn {
-//   position: absolute;
-//   width: 40px;
-//   height: 40px;
-//   top: 10px;
-//   right: 15px;
-//   background-color: transparent;
-//   border: none;
-// }
-// .mob-navigation__icons {
-// }
-// .mob-navigation__icons-cross {
-// }
-// .mob-navigation__list {
-//   list-style: none;
-//   @include font(500, 40px, 1.18, 0.02em);
-  
-  
-// }
-// .mob-navigation__item:not(:last-child) {
-//   margin-bottom: 32px;
-// }
-// .mob-navigation__link {
-//   color: #212121;
-// }
-
-// .mob__box {
-//   position: absolute;
-//   bottom: 48px;
-//   margin-top: 15px;
-  
-// }
-// .mob-auth__list {
-//   margin-bottom: 64px;
-//   list-style: none;
-// }
-// .mob-auth__item:first-child {
-//   margin-bottom: 32px;
-// }
-// .mob-auth__link-tel {
-//   @include font(500, 34px, 1.18, 0.02em);
-//   color: #2196F3;
-//   text-decoration: none;
-// }
-// .mob-auth__link-mail {
-//   @include font(500, 24px, 1.17, 0.02em);
-//   color: #2196F3;
-//   text-decoration: none;
-//   color: #757575;
-// }
-
-
-// .mob-social__list {
-//   display: flex;
-//   list-style: none;
-// }
-// .mob-social__item:not(:last-child)::after {
-//   content:'';
-//   margin-left: 10px;
-//   margin-right: 10px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   transform: rotate(90deg);
-// }
-// .mob-social__link {
-//   color: #2196F3;
-//   text-decoration: none;
-// }
