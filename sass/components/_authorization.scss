@@ -1,10 +1,8 @@
 .auth {
-  // border: solid 2px tomato;
   margin-left: auto;
   @include tel-max {
     display: none;
   }
-
   &__list {
     list-style: none;
     @include desktop {
@@ -13,7 +11,6 @@
     }
   }
   &__item {
-
   display: flex;
   align-items: center;
   @include font(500, 12px, 1.17, 0.02em);
@@ -28,14 +25,11 @@
       margin-bottom: 10px;
     }
     @include desktop {
-    margin-right: 30px;
-    margin-bottom: 0px;
-    
-  }
+      margin-right: 30px;
+      margin-bottom: 0px;  
+    }
   }
   &__link {
-    // padding-top: 5px;
-    // padding-bottom: 5px;
     color: var(--primery-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include desktop {
@@ -46,11 +40,9 @@
     }
   }
   &__link:hover {
-  color: var(--accent-color);
+    color: var(--accent-color);
   }
-
-  &__icons {
-    
+  &__icons {  
     margin-right: 8px;
     fill: currentColor;
     @include desktop {

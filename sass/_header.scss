@@ -44,7 +44,7 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: #fff;
+  background-color: var(--second-bg-color);
   overflow: scroll;
   z-index: 999;
   @media screen and (min-width: 768px) {
@@ -72,7 +72,7 @@
     margin-bottom: 32px;
   }
   &__navigation-link {
-    color: #212121;
+    color: var(--fourth-text-color);
   }
   &__auth-list {
     margin-bottom: 64px;
@@ -83,14 +83,14 @@
   }
   &__auth-link-tel {
     @include font(500, 34px, 1.18, 0.02em);
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
   }
   &__auth-link-mail {
     @include font(500, 24px, 1.17, 0.02em);
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
-    color: #757575;
+    color: var(--primery-text-color);
   }
   &__social-list {
     display: flex;
@@ -104,7 +104,7 @@
     transform: rotate(90deg);
   }
   &__social-link {
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
   }
 }

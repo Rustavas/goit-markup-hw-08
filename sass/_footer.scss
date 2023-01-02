@@ -70,7 +70,6 @@
   color: var(--third-text-color);
   @include font(700, null, 1.14, 0.03em);
   text-transform: uppercase;
-
   @include desktop {
     text-align: left;
   }

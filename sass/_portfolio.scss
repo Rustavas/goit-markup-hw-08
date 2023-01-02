@@ -100,7 +100,6 @@
   }
   &__text::-webkit-scrollbar-thumb {
     background-color: var(--portfolio-text-scrollbar-bg-color);
-    /* outline: 1px solid slategrey; */
   }
 }
 .portfolio-btn {
@@ -144,13 +143,11 @@
   &__work-padding {
     padding: 6px 25px;
   }
-  
   &__work:hover,
   &__work:focus {
     color: var(--second-accent-color);
     background-color: var(--accent-color);
   }
-  
   &__work:hover,
   &__work:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
